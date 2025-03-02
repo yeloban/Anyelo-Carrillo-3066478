@@ -1,0 +1,30 @@
+// Solicitar valores al usuario con prompt y convertirlos a números enteros
+let A = parseInt(prompt('Ingrese el primer valor: '));
+let B = parseInt(prompt('Ingrese el segundo valor: '));
+
+// Realizar operaciones matemáticas básicas
+let suma = A + B;
+let resta = A - B;
+let multi = A * B;
+
+// Manejo de división para evitar error si B es 0
+let div = B !== 0 ? A / B : "No se puede dividir por 0";
+
+// Comparaciones entre los números
+let igual = A === B;
+let mayor = A > B;
+let menor = A < B;
+
+// Mostrar los resultados en consola
+console.log('\n--- Resultados ---');
+console.log(`La suma de los números es: ${suma}`);
+console.log(`La resta de los números es: ${resta}`);
+console.log(`La multiplicación de los números es: ${multi}`);
+console.log(`La división de los números es: ${div}`);
+
+if (igual) {
+    console.log('Ambos números son iguales.');
+} else {
+    console.log(`El número menor es: ${menor ? A : B}`);
+    console.log(`El número mayor es: ${mayor ? A : B}`);
+}
